@@ -17,6 +17,7 @@
 		4E5E8E77254D5F1700ED4308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5E8E76254D5F1700ED4308 /* Assets.xcassets */; };
 		4E5E8E7A254D5F1700ED4308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E5E8E78254D5F1700ED4308 /* LaunchScreen.storyboard */; };
 		4E5E8E87254FF67400ED4308 /* TitleAndTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5E8E86254FF67400ED4308 /* TitleAndTextFieldCell.swift */; };
+		4EEC86422563E795001B388E /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEC86412563E795001B388E /* ButtonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4E5E8E79254D5F1700ED4308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E5E8E7B254D5F1700ED4308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5E8E86254FF67400ED4308 /* TitleAndTextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleAndTextFieldCell.swift; sourceTree = "<group>"; };
+		4EEC86412563E795001B388E /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				4E18BC09255589F600E7AEB0 /* DatePickerTableViewCell.swift */,
 				4E5E8E86254FF67400ED4308 /* TitleAndTextFieldCell.swift */,
 				4E18BC012552CADF00E7AEB0 /* DateTableViewCell.swift */,
+				4EEC86412563E795001B388E /* ButtonTableViewCell.swift */,
 				4E18BC1025597D4100E7AEB0 /* TextViewTableViewCell.swift */,
 			);
 			path = TableViewCells;
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEC86422563E795001B388E /* ButtonTableViewCell.swift in Sources */,
 				4E18BC022552CADF00E7AEB0 /* DateTableViewCell.swift in Sources */,
 				4E18BBFC2552944F00E7AEB0 /* ViewController.swift in Sources */,
 				4E5E8E6E254D5F1400ED4308 /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  NewDateTableViewCell.swift
+//  DateTableViewCell.swift
 //  DateTableTest
 //
 //  Created by Isha Dua on 04/11/20.

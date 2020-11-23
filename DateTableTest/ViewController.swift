@@ -29,6 +29,7 @@ class ViewController: UITableViewController {
         tableView.register(DateTableViewCell.self, forCellReuseIdentifier: "NewDateTableViewCell")
         tableView.register(DatePickerTableViewCell.self, forCellReuseIdentifier: "DatePickerTableViewCell")
         tableView.register(TextViewTableViewCell.self, forCellReuseIdentifier: "TextViewTableViewCell")
+        tableView.register(ButtonTableViewCell.self, forCellReuseIdentifier: "ButtonTableViewCell")
 
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -43,10 +44,10 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if selectedDatePickerIndexPath != nil {
-            return data.count + 1
+            return data.count + 3
         }
         
-        return data.count
+        return data.count + 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,6 +71,18 @@ class ViewController: UITableViewController {
         case 3:
             if selectedDatePickerIndexPath == nil {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "TextViewTableViewCell") as! TextViewTableViewCell
+                return cell
+            }
+        case 4,5:
+            if selectedDatePickerIndexPath == nil {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonTableViewCell") as! ButtonTableViewCell
+                cell.configure(title: "Delete")
+                return cell
+            }
+        case 6:
+            if selectedDatePickerIndexPath != nil {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ButtonTableViewCell") as! ButtonTableViewCell
+                cell.configure(title: "Delete")
                 return cell
             }
         default:
